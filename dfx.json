@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "todo": {
+      "type": "custom",
+      "candid": "todo/can.did",
+      "wasm": "target/wasm32-unknown-unknown/release/todo.wasm",
+      "build": "./generate-wasm.sh todo"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    },
+    "ic": {
+      "bind": "https://ic0.app/",
+      "type": "persistent"
+    }
+  },
+  "version": 1
+}
