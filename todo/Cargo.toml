@@ -10,9 +10,9 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-candid = "0.7.8"
-getrandom = { version = "0.2.3", features = ["js"] }
-ic-cdk = "0.3.2"
-ic-cdk-macros = "0.3.2"
-rand = "0.7.3"
-serde = "1.0.130"
+candid = "0.8.3"
+getrandom = { version = "0.2.8", features = ["custom"] }
+ic-cdk = "0.6.3"
+ic-cdk-macros = "0.6.3"
+rand = "0.8.5"
+serde = "1.0.147"
