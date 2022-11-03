@@ -1,10 +1,9 @@
 {
   "canisters": {
     "todo": {
-      "type": "custom",
+      "type": "rust",
       "candid": "todo/can.did",
-      "wasm": "target/wasm32-unknown-unknown/release/todo.wasm",
-      "build": "./generate-wasm.sh todo"
+      "package": "todo"
     }
   },
   "defaults": {
